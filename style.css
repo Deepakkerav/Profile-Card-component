@@ -1,0 +1,98 @@
+:root{
+    --blue-600: hsl(185, 75%, 39%);
+    --navy-950: hsl(229, 23%, 23%);
+    --gray-500: hsl(227, 10%, 46%);
+
+    /* ### Neutral */
+
+    --gray-100: hsl(225, 10%, 92%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:var(--blue-600);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat ,no-repeat;
+    background-position-x: 0,100%;
+    background-position-y:-100%,150%;
+
+
+}
+main{ 
+    width:max-content;
+    height:max-content;
+   background-color: var(--gray-100);
+
+   border-radius:2rem;
+}
+.cardtop{
+    img{
+        border-radius: 20px 20px 0 0;
+    }
+}
+.Victorimg{
+     width:100px;
+     height:100px;
+    background-image: url(images/image-victor.jpg);
+
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius:50%;
+    border: 4px solid var(--gray-100);
+    position: relative;
+    bottom: 50px;
+}
+.person-cont{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+     
+}
+.person-cont{
+   p,label{ position: relative;
+    top:-40px;
+   }
+   p{
+    font-size:large;
+    font-weight: bold;
+    span{
+        opacity: .3;
+    }
+   }
+   label{
+    font-size: small;
+    font-weight: lighter;
+    
+   }
+
+}
+.link{
+    display: flex;
+    justify-content:space-around;   
+
+    margin:1rem;
+    div > p{
+        font-weight: bold;
+        font-style: normal;
+    }
+    div > label{
+         opacity: .4;
+    }
+
+
+}
+hr{
+    opacity: .7;
+}
